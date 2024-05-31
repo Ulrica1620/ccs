@@ -77,11 +77,11 @@ with tab1:
         c1, c2,c3 = st.columns([1,8,1])        
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A96.jpg?raw=true" width="600"/>''', unsafe_allow_html=True)
 
-    with a4.expander("🧣 赛前&赛后，小红书数据变化 Cr.豆瓣 今天吃素🍖"):
+    with a4.expander("🍠 赛前&赛后，小红书数据变化 Cr.豆瓣 今天吃素🍖"):
         c1, c2,c3 = st.columns([1,8,1])        
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A97.jpg?raw=true" width="600"/>''', unsafe_allow_html=True)
     
-    with a5.expander("🧣 赛前&赛后，抖音数据变化 Cr.豆瓣 今天吃素🍖"):
+    with a5.expander("🫘 赛前&赛后，抖音数据变化 Cr.豆瓣 今天吃素🍖"):
         c1, c2,c3 = st.columns([1,8,1])        
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A98.jpg?raw=true" width="600"/>''', unsafe_allow_html=True)
 
