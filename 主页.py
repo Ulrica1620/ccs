@@ -81,7 +81,7 @@ def main_bg(main_bg):
     )
  
 #调用
-main_bg('/Users/wcheng/Desktop/ticket/陈楚生/ccs/image/background.png')
+main_bg('./image/background.png')
 
 
 st.subheader('🙌 留下评论与建议')
