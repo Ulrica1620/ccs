@@ -167,11 +167,11 @@ COMMENT_TEMPLATE_MD = """{} - {}
 conn = connect()
 comments = collect(conn)
 
-with st.expander("💬 Open comments"):
+with st.expander("💬 评论区"):
 
     # Show comments
 
-    st.write("**Comments:**")
+    st.write("**历史评论:**")
 
     for index, entry in enumerate(comments.itertuples()):
         st.markdown(COMMENT_TEMPLATE_MD.format(entry.name, entry.date, entry.comment))
@@ -179,7 +179,7 @@ with st.expander("💬 Open comments"):
         is_last = index == len(comments) - 1
         is_new = "just_posted" in st.session_state and is_last
         if is_new:
-            st.success("☝️ Your comment was successfully posted.")
+            st.success("☝️ 你的评论已成功发布。")
 
     st.markdown("\n")
     st.markdown('\n')
@@ -187,11 +187,11 @@ with st.expander("💬 Open comments"):
 
     # Insert comment
 
-    st.write("**Add your own comment:**")
+    st.write("**发布你的看法:**")
     form = st.form("comment")
-    name = form.text_input("Name")
-    comment = form.text_area("Comment")
-    submit = form.form_submit_button("Add comment")
+    name = form.text_input("用户名")
+    comment = form.text_area("评论")
+    submit = form.form_submit_button("发布")
 
     if submit:
         date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
@@ -213,7 +213,7 @@ with c1:
     st.info('**陈楚生&花生**', icon="🥜")
 
 with c2:
-    st.info('**Contact: [@Ulrica ](wen_cheng@berkeley.edu)**', icon="📩")
+    st.info('**Contact: [@仓仓仓鼠w ](https://weibo.com/u/3216459360)**', icon="📩")
 
 st.title("📕 Sources and Reference")
 st.markdown(

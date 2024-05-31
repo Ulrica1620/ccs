@@ -39,12 +39,12 @@ tab1, tab2, tab3, tab4 = st.tabs(["披荆斩棘3", "声生不息家年华", "天
 
 with tab1:
    st.header("披荆斩棘成团哥哥平台数据汇总")
-   st.image('/Users/wcheng/Desktop/ticket/陈楚生/ccs/image/批哥汇总.jpg', width=1000)
+   st.image('./image/批哥汇总.jpg', width=1000)
    with st.expander("查看具体数据"):
-        st.image('../image/批哥_战绩1.jpg', width=800)
-        st.image('../image/批哥_战绩2.jpg', width=800)
-        st.image('../image/批哥_战绩3.jpg', width=800)
-        st.image('../image/批哥_战绩4.jpg', width=800)
+        st.image('./image/批哥_战绩1.jpg', width=800)
+        st.image('./image/批哥_战绩2.jpg', width=800)
+        st.image('./image/批哥_战绩3.jpg', width=800)
+        st.image('./image/批哥_战绩4.jpg', width=800)
         st.write("""
             上面的图表展示了我为您选择的一些数字。
             这些数字是通过真实的骰子摇出来的，所以它们*保证*是随机的。
@@ -52,8 +52,8 @@ with tab1:
 
 with tab2:
    st.header("A dog")
-   st.image("../image/批哥_战绩1.jpg", width=200)
+   st.image("./image/批哥_战绩1.jpg", width=200)
 
 with tab3:
    st.header("An owl")
-   st.image("../image/批哥_战绩1.jpg", width=200)
+   st.image("./image/批哥_战绩1.jpg", width=200)
