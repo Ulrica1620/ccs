@@ -53,21 +53,20 @@ with tab1:
 
         c10, c11,c12 = st.columns([1,8,1])
         c5.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A94.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
-    
+    st.markdown('\n')
+    st.markdown('\n')
     st.subheader("2. 披荆斩棘官方&陈楚生战报")
     a1, a2,a3 = st.columns([1,8,1])   
     a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A99.jpg?raw=true" width="1000"/>''',unsafe_allow_html=True)
     a4,a5,a6 = st.columns(3) 
     with a4.expander("🧣 工作室战报（1/3） Cr.微博 陈楚生工作室"): 
-        c1, c2,c3 = st.columns([1,8,1])        
-        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A910.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+        st.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A910.jpg?raw=true" width="400"/>''', unsafe_allow_html=True)
     with a5.expander("🧣 工作室战报（2/3） Cr.微博 陈楚生工作室"): 
-        c1, c2,c3 = st.columns([1,8,1])        
-        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A911.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+        st.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A911.jpg?raw=true" width="400"/>''', unsafe_allow_html=True)
     with a6.expander("🧣 工作室战报（3/3） Cr.微博 陈楚生工作室"): 
-        c1, c2,c3 = st.columns([1,8,1])        
-        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A912.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
-
+        st.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A912.jpg?raw=true" width="400"/>''', unsafe_allow_html=True)
+    st.markdown('\n')
+    st.markdown('\n')
     st.subheader("3. 披荆斩棘前后，各平台涨粉情况")
     a4,a5 = st.columns(2)  
     with a4.expander("🧣 赛前&赛后，微博粉丝&铁粉数量变化 Cr.豆瓣 今天吃素🍖"):
@@ -76,7 +75,8 @@ with tab1:
     with a5.expander("🧣 赛前&赛后，微博超话数据变化 Cr.豆瓣 今天吃素🍖"):
         c1, c2,c3 = st.columns([1,8,1])        
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A96.jpg?raw=true" width="600"/>''', unsafe_allow_html=True)
-
+    a4.markdown('\n')
+    a5.markdown('\n')
     with a4.expander("🍠 赛前&赛后，小红书数据变化 Cr.豆瓣 今天吃素🍖"):
         c1, c2,c3 = st.columns([1,8,1])        
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A97.jpg?raw=true" width="600"/>''', unsafe_allow_html=True)
@@ -86,9 +86,40 @@ with tab1:
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A98.jpg?raw=true" width="600"/>''', unsafe_allow_html=True)
 
 with tab2:
-    st.subheader("1. 声生不息嘉年华 各平台舞台数据汇总")
-    a1, a2,a3 = st.columns([1,8,1])   
-    a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5%E6%B1%87%E6%80%BB.jpg?raw=true" width="1000"/>''',unsafe_allow_html=True)
+    st.subheader("1. 声生不息家年华 各平台舞台数据汇总")
+    c1, c2 = st.columns(2)
+    with c1.expander("🎉 声生不息三季 b站百万舞台数据汇总 Cr.豆瓣 今天吃素🍖"):
+        a1, a2,a3 = st.columns([1,8,1])   
+        a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E5%A3%B0%E7%94%9F%E4%B8%8D%E6%81%AF_%E6%88%98%E7%BB%A92.jpg?raw=true" width="800"/>''',unsafe_allow_html=True)
+    with c2.expander("🎉 声生不息三季 b站百万舞台嘉宾统计汇总 Cr.豆瓣 今天吃素🍖"):
+        a1, a2,a3 = st.columns([1,8,1])   
+        a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E5%A3%B0%E7%94%9F%E4%B8%8D%E6%81%AF_%E6%88%98%E7%BB%A91.jpg?raw=true" width="800"/>''',unsafe_allow_html=True)
+    st.markdown('\n')
+    with st.expander("🎉 声生不息家年华 Q音、网易云、酷狗统计汇总 Cr.豆瓣 今天吃素🍖"):
+        a1, a2,a3 = st.columns([1,8,1])   
+        a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E5%A3%B0%E7%94%9F%E4%B8%8D%E6%81%AF_%E6%88%98%E7%BB%A93.jpg?raw=true" width="1000"/>''',unsafe_allow_html=True)
+    st.markdown('\n')
+    st.markdown('\n')
+    st.subheader("2. 声生不息家年华 嘉宾涨粉数据汇总")
+    c1, c2 = st.columns(2)
+    with c1.expander("🎉 Q音、网易云、酷狗涨粉 数据汇总 Cr.豆瓣 今天吃素🍖"):
+        a1, a2,a3 = st.columns([1,8,1])   
+        a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E5%A3%B0%E7%94%9F%E4%B8%8D%E6%81%AF_%E6%88%98%E7%BB%A94.jpg?raw=true" width="800"/>''',unsafe_allow_html=True)
+    with c2.expander("🎉 抖音涨粉 数据汇总 Cr.豆瓣 今天吃素🍖"):
+        a1, a2,a3 = st.columns([1,8,1])   
+        a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E5%A3%B0%E7%94%9F%E4%B8%8D%E6%81%AF_%E6%88%98%E7%BB%A95.jpg?raw=true" width="800"/>''',unsafe_allow_html=True)
+
+    st.markdown('\n')
+    st.markdown('\n')
+    st.subheader("3. 声生不息家年华 陈楚生工作室战报")
+    c1, c2 = st.columns(2)
+    with c1.expander("🧣 陈楚生工作室战报（1/2） Cr.微博 陈楚生工作室"):
+        a1, a2,a3 = st.columns([1,8,1])   
+        a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E5%A3%B0%E7%94%9F%E4%B8%8D%E6%81%AF_%E6%88%98%E7%BB%A96.jpg?raw=true" width="800"/>''',unsafe_allow_html=True)
+    with c2.expander("🧣 陈楚生工作室战报（2/2） Cr.微博 陈楚生工作室"):
+        a1, a2,a3 = st.columns([1,8,1])   
+        a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E5%A3%B0%E7%94%9F%E4%B8%8D%E6%81%AF_%E6%88%98%E7%BB%A97.jpg?raw=true" width="800"/>''',unsafe_allow_html=True)
+
 
 with tab3:
    st.header("An owl")
