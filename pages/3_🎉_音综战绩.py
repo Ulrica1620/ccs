@@ -38,17 +38,37 @@ tab1, tab2, tab3, tab4 = st.tabs(["披荆斩棘3", "声生不息家年华", "天
 
 
 with tab1:
-   st.header("披荆斩棘成团哥哥平台数据汇总")
-   st.image('./image/批哥汇总.jpg', width=1000)
-   with st.expander("查看具体数据"):
-        st.image('./image/批哥_战绩1.jpg', width=800)
-        st.image('./image/批哥_战绩2.jpg', width=800)
-        st.image('./image/批哥_战绩3.jpg', width=800)
-        st.image('./image/批哥_战绩4.jpg', width=800)
-        st.write("""
-            上面的图表展示了我为您选择的一些数字。
-            这些数字是通过真实的骰子摇出来的，所以它们*保证*是随机的。
-        """)
+    st.subheader("1. 披荆斩棘成团哥哥平台数据汇总")
+    a1, a2,a3 = st.columns([1,8,1])   
+    a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5%E6%B1%87%E6%80%BB.jpg?raw=true" width="1000"/>''',unsafe_allow_html=True)
+    with st.expander("查看具体数据 Cr.豆瓣 和雨玟🌱"):
+        c1, c2,c3 = st.columns([1,8,1])        
+        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A91.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+
+        c4, c5,c6 = st.columns([1,8,1])
+        c5.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A92.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+
+        c7, c8,c9 = st.columns([1,8,1])
+        c5.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A93.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+
+        c10, c11,c12 = st.columns([1,8,1])
+        c5.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A94.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+    
+    st.subheader("2. 披荆斩棘前后，各平台涨粉情况")
+    with st.expander("🧣 赛前&赛后，微博粉丝&铁粉数量变化 Cr.豆瓣 今天吃素🍖"):
+        c1, c2,c3 = st.columns([1,8,1])        
+        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A95.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+    with st.expander("🧣 赛前&赛后，微博超话数据变化 Cr.豆瓣 今天吃素🍖"):
+        c1, c2,c3 = st.columns([1,8,1])        
+        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A96.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+
+    with st.expander("🧣 赛前&赛后，小红书数据变化 Cr.豆瓣 今天吃素🍖"):
+        c1, c2,c3 = st.columns([1,8,1])        
+        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A97.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
+    
+    with st.expander("🧣 赛前&赛后，抖音数据变化 Cr.豆瓣 今天吃素🍖"):
+        c1, c2,c3 = st.columns([1,8,1])        
+        c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A98.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
 
 with tab2:
    st.header("A dog")
