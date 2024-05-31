@@ -105,5 +105,5 @@ with tab2:
 
 
 with tab3:
-   st.header("An owl")
-   st.image("./image/批哥_战绩1.jpg", width=200)
+   st.header("天赐的声音5")
+   # st.image("./image/批哥_战绩1.jpg", width=200)

@@ -26,6 +26,8 @@ st.markdown(
     👈 **请点开左侧小箭头查看更多内容。**
 
     👈 **要联系我，请在下方留言。**
+
+    👈 **目前进度：音综战绩。**
     """
 )
 st.markdown("\n")
@@ -85,11 +87,7 @@ main_bg('./image/background.png')
 
 
 st.subheader('🙌 留下评论与建议')
-st.markdown(
-    """
-    Please leave your comments here and also take a look at what others said about this project.
-    """
-)
+
 st.markdown("\n")
 st.markdown('\n')
 st.markdown('\n')
@@ -215,20 +213,5 @@ with c1:
 with c2:
     st.info('**Contact: [@仓仓仓鼠w ](https://weibo.com/u/3216459360)**', icon="📩")
 
-st.title("📕 Sources and Reference")
-st.markdown(
-    """
-    - https://github.com/deep-floyd/IF 
-    - https://stability.ai/blog/deepfloyd-if-text-to-image-model
-    - https://www.nftparis.xyz/blog/introducing-deepfloyd-if-a-revolutionary-text-to-image-model-by-stability-ai
-    - https://the-decoder.com/deepfloyd-if-is-a-crazy-good-text-to-image-model-and-open-source/
-    - https://github.com/deep-floyd/IF
-    - https://github.com/guofei9987/blind_watermark/tree/master
-    - https://github.com/fire-keeper/BlindWatermark
-    - https://bgremoval.streamlit.app/
-    - https://onlinelibrary.wiley.com/doi/10.1002/0471745790.ch5 
-    - https://link.springer.com/referenceworkentry/10.1007/0-387-30038 4_62#:~:text=Definition%3ADiscrete%20Wavelet%20Transform%20is,wavelet%2Dbased%20compression%20and%20coding. 
-    - J. Liu et al., "An Optimized Image Watermarking Method Based on HD and SVD in DWT Domain," in IEEE Access, vol. 7, pp. 80849-80860, 2019, doi: 10.1109/ACCESS.2019.2915596.
-    """
-)
+
 
