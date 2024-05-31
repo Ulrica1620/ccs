@@ -6,7 +6,6 @@ import base64
 from datetime import datetime
 
 import socket
-
 import google_auth_httplib2
 import httplib2
 import pandas as pd
@@ -192,7 +191,7 @@ with st.expander("💬 评论区"):
     submit = form.form_submit_button("发布")
 
     if submit:
-        date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        date = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
         insert(conn, [[name, comment, date]])
         if "just_posted" not in st.session_state:
             st.session_state["just_posted"] = True
