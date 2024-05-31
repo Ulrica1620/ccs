@@ -6,11 +6,11 @@ import sys
 sys.path.append(dir_path)
 
 st.set_page_config(
-    page_title="音乐作品",
-    page_icon=":Music:",
+    page_title="演唱会&音乐节",
+    page_icon=":Mic:",
     layout='wide'
 )
 
-st.title('🎵 音乐作品')
+st.title('🎤 演唱会&音乐节')
 
 st.subheader('In progress')
