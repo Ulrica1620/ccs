@@ -58,7 +58,7 @@ with tab1:
     with st.expander("查看具体数据 Cr.豆瓣 和雨玟🌱"):
         c1, c2,c3 = st.columns([1,8,1])        
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A91.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
-
+        c2.image(Image.open('./image/批哥_战绩1.jpg'),width=700, output_format='PNG')
         c4, c5,c6 = st.columns([1,8,1])
         c5.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A92.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
 
