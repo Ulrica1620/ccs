@@ -10,6 +10,12 @@ st.set_page_config(
     page_icon=":Pear:",
     layout='wide'
 )
+# Add custom CSS to hide the GitHub icon
+st.markdown("""
+        <style>
+        [data-testid="stToolbarActions"] {display: none}
+        <style>
+        """,unsafe_allow_html=True)
 
 st.title('🍐 里里往事')
 
