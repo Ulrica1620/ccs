@@ -20,7 +20,7 @@ st.set_page_config(layout="wide", page_title="Hello Page")
 # Add custom CSS to hide the GitHub icon
 st.markdown("""
         <style>
-        [data-testid="stActionButtonIcon"] {display: none}
+        [data-testid="stToolbarActions"] {display: none}
         <style>
         """,unsafe_allow_html=True)
 
