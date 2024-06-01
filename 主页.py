@@ -34,8 +34,6 @@ st.markdown("\n")
 st.markdown('\n')
 st.markdown('\n')
 
-
- 
 def sidebar_bg(side_bg):
  
    side_bg_ext = 'png'
@@ -160,10 +158,7 @@ def insert(gsheet_connector, row) -> None:
 
 COMMENT_TEMPLATE_MD = """{} - {}
 > {}"""
-# Comments part
 
-conn = connect()
-comments = collect(conn)
 
 
 
@@ -196,7 +191,10 @@ def timezone_change(time_str, src_timezone, dst_timezone=None):
         new_dt = utc_dt.astimezone()
     # 转换成字符串时间格式
     return new_dt.strftime(time_format)
+# Comments part
 
+conn = connect()
+comments = collect(conn)
 
 with st.expander("💬 评论区"):
 
@@ -225,8 +223,9 @@ with st.expander("💬 评论区"):
     submit = form.form_submit_button("发布")
 
     if submit:
-        date = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-        date = timezone_change(date, src_timezone="America/Los_Angeles", dst_timezone="Asia/Shanghai")
+        date = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        # st.markdown(date)
+        # date = timezone_change(date, src_timezone="America/Los_Angeles", dst_timezone="Asia/Shanghai")
         insert(conn, [[name, comment, date]])
         if "just_posted" not in st.session_state:
             st.session_state["just_posted"] = True
