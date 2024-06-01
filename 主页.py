@@ -1,4 +1,10 @@
 import streamlit as st
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon,unsafe_allow_html=True)
 # from rembg import remove
 from PIL import Image
 from io import BytesIO
@@ -17,12 +23,7 @@ from googleapiclient.http import HttpRequest
 
 st.set_page_config(layout="wide", page_title="Hello Page")
 # Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon,unsafe_allow_html=True)
+
 
 st.title("🎸 陈楚生&花生资源库")
 st.markdown(
@@ -58,6 +59,7 @@ def sidebar_bg(side_bg):
  
 #调用
 # sidebar_bg('/Users/wcheng/Desktop/ticket/陈楚生/ccs/image/sidebar_bg.png')
+
 
 
 
