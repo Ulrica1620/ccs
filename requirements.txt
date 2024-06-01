@@ -21,7 +21,6 @@ markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 mdurl==0.1.2
 numpy==1.26.4
-packaging==24.0
 pandas==2.2.2
 pillow==10.3.0
 proto-plus==1.23.0
