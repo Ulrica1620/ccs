@@ -15,7 +15,14 @@ from googleapiclient.discovery import build
 from googleapiclient.http import HttpRequest
 
 
-st.set_page_config(layout="centered", page_title="Hello Page")
+st.set_page_config(layout="wide", page_title="Hello Page")
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 st.title("🎸 陈楚生&花生资源库")
 st.markdown(
