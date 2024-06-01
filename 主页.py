@@ -15,7 +15,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import HttpRequest
 
 
-st.set_page_config(layout="wide", page_title="Hello Page")
+st.set_page_config(layout="centered", page_title="Hello Page")
 
 st.title("🎸 陈楚生&花生资源库")
 st.markdown(

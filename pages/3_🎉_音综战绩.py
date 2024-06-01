@@ -47,7 +47,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["披荆斩棘3", "声生不息家年华", "天
 with tab1:
     st.subheader("1. 披荆斩棘成团哥哥 各平台数据汇总")
     a1, a2,a3 = st.columns([1,8,1])   
-    a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5%E6%B1%87%E6%80%BB.jpg?raw=true" width="1000"/>''',unsafe_allow_html=True)
+    a2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5%E6%B1%87%E6%80%BB.jpg?raw=true" width="1000" style="margin: 0 auto;"/>''',unsafe_allow_html=True)
     with st.expander("查看具体数据 Cr.豆瓣 和雨玟🌱"):
         c1, c2,c3 = st.columns([1,8,1])        
         c2.markdown('''<img src="https://github.com/Ulrica1620/ccs/blob/main/image/%E6%89%B9%E5%93%A5_%E6%88%98%E7%BB%A91.jpg?raw=true" width="800"/>''', unsafe_allow_html=True)
