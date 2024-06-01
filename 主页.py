@@ -3,6 +3,7 @@ import streamlit as st
 from PIL import Image
 from io import BytesIO
 import base64
+import pytz
 from datetime import datetime
 
 import socket
@@ -164,6 +165,39 @@ COMMENT_TEMPLATE_MD = """{} - {}
 conn = connect()
 comments = collect(conn)
 
+
+
+def timezone_change(time_str, src_timezone, dst_timezone=None):
+    """
+    将任一时区的时间转换成指定时区的时间
+    如果没有指定目的时区，则默认转换成当地时区
+
+    :param time_str:
+    :param src_timezone: 要转换的源时区，如"Asia/Shanghai"， "UTC"
+    :param dst_timezone: 要转换的目的时区，如"Asia/Shanghai", 如果没有指定目的时区，则默认转换成当地时区
+    :param dst_timezone: 时间格式
+    :return: str, 字符串时间格式
+    """
+    time_format = "%Y-%m-%d %H:%M:%S"
+
+    # 将字符串时间格式转换成datetime形式
+    old_dt = datetime.strptime(time_str, time_format)
+
+    # 将源时区的datetime形式转换成GMT时区(UTC+0)的datetime形式
+    dt = pytz.timezone(src_timezone).localize(old_dt)
+    utc_dt = pytz.utc.normalize(dt.astimezone(pytz.utc))
+
+    # 将GMT时区的datetime形式转换成指定的目的时区的datetime形式
+    if dst_timezone:
+        _timezone = pytz.timezone(dst_timezone)
+        new_dt = _timezone.normalize(utc_dt.astimezone(_timezone))
+    else:
+        # 未指定目的时间，默认转换成当地时区
+        new_dt = utc_dt.astimezone()
+    # 转换成字符串时间格式
+    return new_dt.strftime(time_format)
+
+
 with st.expander("💬 评论区"):
 
     # Show comments
@@ -191,7 +225,8 @@ with st.expander("💬 评论区"):
     submit = form.form_submit_button("发布")
 
     if submit:
-        date = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
+        date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        date = timezone_change(date, src_timezone="America/Los_Angeles", dst_timezone="Asia/Shanghai")
         insert(conn, [[name, comment, date]])
         if "just_posted" not in st.session_state:
             st.session_state["just_posted"] = True
