@@ -3,6 +3,7 @@ from PIL import Image
 import os
 dir_path = os.path.split(os.path.realpath(__file__))[0]
 import sys
+import base64
 sys.path.append(dir_path)
 
 st.set_page_config(
@@ -12,6 +13,24 @@ st.set_page_config(
 )
 
 st.title('🎉 音综战绩')
+
+def main_bg(main_bg):
+    main_bg_ext = "jpg"
+    st.markdown(
+        f"""
+         <style>
+         .stApp {{
+             background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+             background-size: cover
+         }}
+         </style>
+         """,
+        unsafe_allow_html=True
+    )
+ 
+#调用
+main_bg('./image/background2.png')
+
 
 st.header('介绍')
 st.markdown(
