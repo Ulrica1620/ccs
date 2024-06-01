@@ -223,7 +223,7 @@ with st.expander("💬 评论区"):
     submit = form.form_submit_button("发布")
 
     if submit:
-        date = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        date = str(datetime.now(tz="Asia/Shanghai").strftime("%Y-%m-%d %H:%M:%S"))
         # st.markdown(date)
         # date = timezone_change(date, src_timezone="America/Los_Angeles", dst_timezone="Asia/Shanghai")
         insert(conn, [[name, comment, date]])
