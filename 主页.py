@@ -225,7 +225,7 @@ with st.expander("💬 评论区"):
     submit = form.form_submit_button("发布")
 
     if submit:
-        date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        date = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
         date = timezone_change(date, src_timezone="America/Los_Angeles", dst_timezone="Asia/Shanghai")
         insert(conn, [[name, comment, date]])
         if "just_posted" not in st.session_state:
